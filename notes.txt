@@ -4,7 +4,7 @@ node --> check if node is installed
 npm init -y --> creates package.json
 npm install express --> automatically changes package.json
 node index.js OR in package.json scripts: "start": "node index.js" THEN npm start
-npm i --save-dev nodemon --> don't need to kill and restart server ghen modifiying index.js
+npm i --save-dev nodemon --> don't need to kill and restart server then modifiying index.js
     create the dev script in package.json THEN npm run dev
 
 npm i cors --> allow client to http request to api
