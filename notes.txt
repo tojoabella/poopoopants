@@ -16,3 +16,8 @@ npm i monk --> access to mongodb
 
 to start api server: npm run dev
 to start client: live-server
+
+
+npm i -g vercel
+vercel secrets add lessons-db mongodb+srv://<USERNAME>:<PASSWORD>@poopoopantsdb.8fa21.mongodb.net/poopoopantsdb?retryWrites=true&w=majority
+vercel -e MONGO_URI=@lessons-db
