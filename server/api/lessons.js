@@ -4,6 +4,9 @@ router = express.Router();
 const monk = require('monk');
 const db = monk(process.env.MONGO_URI || 'localhost:27017/poopoopants');
 
+router.get('/test', (req, res) => {
+    res.json("hellow");
+});
 
 router.get('/', (req, res) => {
     const lessons = db.get('lessons');
