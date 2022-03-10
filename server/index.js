@@ -11,7 +11,7 @@ const app = express();
 app.use(cors()); 
 app.use(express.json());
 
-app.use('/lessons', lessons_routes)
+app.use('/api/lessons', lessons_routes)
 
 const db = monk(process.env.MONGO_URI || 'localhost:27017/poopoopants');
 db.then(() => {
